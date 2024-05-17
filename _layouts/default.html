@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Inicio</a></li>
+                <li><a href="{{ site.baseurl }}/apuntes/">Apuntes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; 2024 {{ site.title }}</p>
+    </footer>
+</body>
+</html>
